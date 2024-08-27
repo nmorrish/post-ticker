@@ -1,0 +1,42 @@
+.ctt-post-ticker-container{
+    overflow: hidden;
+}
+
+.ctt-post-ticker {
+    display: flex;
+    overflow: hidden;
+    white-space: normal; /* Allow wrapping of text */
+    cursor: grab; /* Indicate that the user can drag */
+    -webkit-user-select: none; /* For WebKit browsers */
+    -moz-user-select: none; /* For Firefox */
+    -ms-user-select: none; /* For Internet Explorer/Edge */
+}
+
+.ctt-post-item {
+    flex: 0 0 350px; /* Prevents flex items from shrinking or growing, keeps them at 350px */
+    padding: 15px 20px;
+    margin:0 5px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border: 1px solid #e6e6e6;
+    background-color: #fefefe;
+}
+
+.ctt-post-item img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.ctt-post-item h4{
+    font-size:0.8em !important;
+}
+
+.ctt-post-content {
+    width: 100%;
+    word-wrap: break-word; /* Ensure long words wrap within the container */
+    text-align: left; /* Optional: Align text to the left for better readability */
+    font-size:0.7em !important;
+    color:#3b3b3b;
+}
